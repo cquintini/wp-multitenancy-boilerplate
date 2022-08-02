@@ -46,12 +46,12 @@
 		},
 		"wordpress-install-dir": "web/wp"
 	},
-	"repositories": {
-		"wpackagist": {
-			"type": "composer",
-			"url": "https://wpackagist.org/"
-		}
-	},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/cquintini/wp-multitenancy-boilerplate"
+        }
+    ],
 	"scripts": {
 		"post-create-project-cmd": [
 			"composer run generate-salts",
